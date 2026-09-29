@@ -6,7 +6,7 @@ namespace IOC.console
 {
     public class DALFactory
     {
-        public static DAL GetDal()
+        public static IDAL GetDal()
         {
             return new DAL();   
         }

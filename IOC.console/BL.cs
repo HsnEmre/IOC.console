@@ -6,7 +6,8 @@ namespace IOC.console
 {
     internal class BL
     {
-        private DAL _dal { get; set; }
+        //private DAL _dal { get;set }
+        private IDAL _dal { get; set; }
 
 
 
@@ -14,11 +15,12 @@ namespace IOC.console
         {
             //_dal = new DAL();
             _dal=DALFactory.GetDal();//ioc implament
+
         }
 
         public List<Product> GetProducts()
         {
-
+            
             return _dal.GetProducts();
         }
     }

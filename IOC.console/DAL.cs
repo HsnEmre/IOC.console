@@ -8,6 +8,7 @@ namespace IOC.console
     {
         public List<Product> GetProducts()
         {
+            //for example sql server 
             return new List<Product>()
             {
                 new Product{ ID=1,Name="Kalem",Price=100,Stock=100},

@@ -11,16 +11,17 @@ namespace IOC.console
 
 
 
-        public BL()
+        public BL(IDAL dal)
         {
             //_dal = new DAL();
-            _dal=DALFactory.GetDal();//ioc implament
+            //_dal=DALFactory.GetDal();//ioc implament
+            _dal = dal;//di
 
         }
 
         public List<Product> GetProducts()
         {
-            
+
             return _dal.GetProducts();
         }
     }

@@ -12,7 +12,8 @@ namespace IOC.console
 
         public BL()
         {
-            _dal = new DAL();
+            //_dal = new DAL();
+            _dal=DALFactory.GetDal();//ioc implament
         }
 
         public List<Product> GetProducts()
